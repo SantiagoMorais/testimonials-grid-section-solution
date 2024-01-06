@@ -1,0 +1,49 @@
+@media(min-width: 1920px) {
+    body {
+        font-size: 2rem;
+    }
+
+    .window .profile .avatar {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .window .avaliation {
+        font-size: 2.5rem;
+    }
+
+    .attribution {
+        font-size: 3rem;
+    }
+    
+    .attribution a {
+        color: var(--first-background-color);
+        font-weight: 600;
+        transition: .3s;
+    }
+}
+
+@media(max-width: 1080px) {
+    body {
+        overflow: scroll;
+    }
+
+    .windows {
+        grid-template-areas: "daniel jonathan"
+            "jeanette  patrick"
+            "kira kira";
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
+@media(max-width: 725px) {
+    .windows {
+        grid-template-areas: "daniel"
+            "jonathan"
+            "jeanette"
+            "patrick"
+            "kira";
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,10 @@
+:root {
+    --first-background-color: hsl(263, 55%, 52%);
+    --second-background-color: hsl(217, 19%, 35%);
+    --third-background-color: hsl(219, 29%, 14%);
+    --dark-opaque-color: hsl(219, 29%, 14%,.7);
+    --white-color: hsl(0, 0%, 100%);
+    --white-opaque-color: hsl(0, 0%, 100%, .5);
+    --container-background-color: hsl(210, 46%, 95%);
+    --commentary-color: hsl(0, 0%, 81%);
+}

@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    background-color: var(--container-background-color);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 3rem;
+}
+
+.windows {
+    display: grid;
+    grid-template-areas: "daniel daniel jonathan kira"
+                         "jeanette patrick patrick kira";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 80%;
+    transition: .3s;
+}
+
+.window {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: .3rem .3rem 1rem rgba(0,0,0,.5);
+}
+
+.window.daniel {
+    grid-area: daniel;
+    background-color: var(--first-background-color);
+    color: var(--white-color);
+    position: relative;
+    background: url(../images/bg-pattern-quotation.svg) var(--first-background-color) no-repeat 80% 0%;
+
+}
+
+.window.jonathan {
+    grid-area: jonathan;
+    background-color: var(--second-background-color);
+    color: var(--white-color);
+}
+
+.window.kira {
+    grid-area: kira;
+    background-color: var(--white-color);
+    color: var(--third-background-color);
+}
+
+.window.jeanette {
+    grid-area: jeanette;
+    background-color: var(--white-color);
+    color: var(--third-background-color);
+}
+
+.window.patrick {
+    grid-area: patrick;
+    background-color: var(--third-background-color);
+    color: var(--white-color);
+}
+
+.window .profile {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.window .profile .avatar {
+    border-radius: 50%;
+    border: .25rem solid;
+    width: 4rem;
+    height: 4rem;
+    transition: .3s;
+}
+
+.window.jeanette .profile .avatar,
+.window.kira .profile .avatar {
+    border: none;
+}
+
+.window.patrick .profile .avatar {
+    border-color: var(--first-background-color);
+}
+
+.window .profile div .verified-user {
+    color: var(--white-opaque-color);
+}
+
+.window.jeanette .profile div .verified-user,
+.window.kira .profile div .verified-user {
+    color: var(--dark-opaque-color);
+}
+
+.window .avaliation {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.window .commentary {
+    color: var(--white-opaque-color);;
+}
+
+.window.jeanette .commentary,
+.window.kira .commentary {
+    color: var(--dark-opaque-color);
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--container-background-color);
+    width: 100%;
+    box-shadow: 5rem 0 5rem;
+    transition: .3s;
+}
+
+.attribution a {
+    color: var(--first-background-color);
+    font-weight: 600;
+}
+
+.attribution a:hover {
+    opacity: .8;
+}
